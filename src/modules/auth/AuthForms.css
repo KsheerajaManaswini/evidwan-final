@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Quicksand');
+ 
+* {
+  font-family: 'quicksand', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+ 
+body {
+  background: #f7f7f7; /* first-color */
+}
+ 
+.first-color { background: #f7f7f7; }
+.second-color { background: #eeeeee; }
+.third-color { background: #393e46; }
+.fourth-color { background: #929aab; }
+ 
+.form-modal {
+  position: relative;
+  width: 450px;
+  margin: 4em auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+.formData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.form-toggle {
+  display: flex;
+ 
+}
+ 
+.form-toggle button {
+  width: 50%;
+  padding: 1.5em;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s;
+  font-size: 1.1em;
+  cursor: pointer;
+  background-color: #393e46; /* third-color */
+  color: white;
+}
+ 
+.form-toggle button:hover {
+  background-color: #929aab; /* fourth-color */
+}
+ 
+.form-modal form {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+ 
+.form-modal input,
+.form-modal select {
+  width: 100%;
+  font-size: 1em;
+  padding: 1.2em;
+  margin: 0.6em 0;
+  border-radius: 20px;
+  border: 1px solid #929aab; /* fourth-color */
+  background: #eeeeee; /* second-color */
+  color: #393e46; /* third-color */
+  font-weight: bold;
+}
+ 
+.form-modal .btn {
+  width: 100%;
+  padding: 0.8em;
+  margin: 0.5em 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 0.5s;
+}
+ 
+/* .login, .signup {
+  background: #393e46;  third-color 
+  color: white;
+} */
+ 
+.-box-sd-effect:hover {
+  box-shadow: 0 4px 8px hsla(210, 2%, 84%, .2);
+}
+ 
+.form-modal p {
+  font-size: 16px;
+  font-weight: bold;
+}
+ 
+.form-modal p a {
+  color: #393e46; /* third-color */
+  text-decoration: none;
+}
+ 
+.form-modal p a:hover {
+  color: #929aab; /* fourth-color */
+}
+ 
+@media only screen and (max-width: 500px) {
+  .form-modal {
+    width: 100%;
+  }
+}
